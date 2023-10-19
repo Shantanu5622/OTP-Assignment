@@ -2,7 +2,7 @@ import random
 import smtplib
 
 def generateOTP():
-    otp = ''.join([str(random.randint(0,9)) for i in range(4)])
+    otp = ''.join([str(random.randint(0,9)) for i in range(6)])
     return otp
 
 

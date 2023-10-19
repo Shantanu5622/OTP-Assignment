@@ -1,7 +1,7 @@
 import validate_otp_V2 as otp
 import pytest
 import unittest
-from validate_otp_V2 import validateEmail, generateOTP, send_email
+from validate_otp_V2 import *
 
 
 class TestProgramFunctions(unittest.TestCase):
@@ -18,7 +18,7 @@ class TestProgramFunctions(unittest.TestCase):
 
     def test_generateOTP(self):
         otp = generateOTP()
-        self.assertEqual(len(otp), 4)
+        self.assertEqual(len(otp), 6)
         self.assertTrue(otp.isdigit())
 
 
